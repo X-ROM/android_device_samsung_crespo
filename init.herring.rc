@@ -218,3 +218,7 @@ service wimax_route /system/bin/route add default dev uwbr0
     class main
     disabled
     oneshot
+
+    # Fast Charge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
